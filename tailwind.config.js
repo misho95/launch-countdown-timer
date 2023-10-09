@@ -13,11 +13,13 @@ export default {
       },
       width: {
         w148: "148px",
+        w70: "70px",
       },
       height: {
         h197: "197px",
         h168: "168px",
         h132: "132px",
+        h70: "70px",
       },
     },
   },

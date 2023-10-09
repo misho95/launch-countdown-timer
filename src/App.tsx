@@ -9,15 +9,15 @@ function App() {
   return (
     <>
       <div className="w-full min-h-screen bg-purple2 relative">
-        <div className="absolute top-0 left-0 w-full h-screen bg-[url(./assets/images/bg-stars.svg)] flex flex-col justify-center items-center gap-20">
-          <h1 className="text-xl text-white select-none">
+        <div className="absolute top-0 left-0 w-full min-h-screen bg-[url(./assets/images/bg-stars.svg)] flex flex-col justify-center items-center gap-20">
+          <h1 className="text-4xl text-white select-none text-center">
             WE'RE LAUNCHING SOON
           </h1>
-          <div className="flex gap-10">
-            <Timer time={"08"} title={"DAYS"} />
-            <Timer time={"23"} title={"HOURS"} />
-            <Timer time={"55"} title={"MINUTS"} />
-            <Timer time={"41"} title={"SECONDS"} />
+          <div className="flex gap-5 sm:gap-10">
+            <Timer time={"08"} title={"DAYS"} both={false} />
+            <Timer time={"23"} title={"HOURS"} both={true} />
+            <Timer time={"55"} title={"MINUTS"} both={true} />
+            <Timer time={"41"} title={"SECONDS"} both={true} />
           </div>
         </div>
         <div
